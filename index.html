@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2ce30f9d9c.js" crossorigin="anonymous"></script>
+    <title>CONCEP-LAB</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navLogo">
+                <img src="img/logoConcepLab.png" alt="Logo Concep-Lab">
+                <span>CONCEP-LAB</span>
+            </div>
+            <div class="navItems" id="_items">
+                <a class="hoverFooter" href="index.html">INICIO</a>
+                <a class="hoverFooter" href="proyectos.html">PROYECTOS</a>
+                <a class="hoverFooter" href="quienesSomos.html">QUIENES SOMOS</a>
+                <a class="hoverFooter" href="contacto.html">CONTACTO</a>
+                <a class="hoverFooter" href="dondeestamos.html">DONDE ESTAMOS</a>
+            
+                </a>
+            </div>
+            <div class="navToggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="buscador">
+                <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i>
+                <form action="form.html">
+                    <input type="search" name="search" class="inputDefault">
+                </form>
+            </div>
+        </nav>
+        <script>
+            _toggle.onclick = () =>{
+                _items.classList.toggle("open")
+                _toggle.classList.toggle("close")
+            }
+        </script>
+    </header>
+    <main>
+        <section class="section1Index">
+            <div class="vertical">
+                <h2>LABORATORIO-CONCEPTUAL</h2>
+            </div>
+            <div class="divArq">
+                <h1>ARQUITECTURA</h1>
+                <p class="tituloIA">IA</p>
+                <div class="lineaBlanca"></div>
+                <div class="cuadradoIndex">
+                    <p class="textoIA">La Inteligencia Artificial está revolucionando la arquitectura y el diseño en muchos ámbitos, principalmente en tres aspectos: es menos costoso, brinda mayores resultados y ahorra tiempo.</p>
+                </div>
+            </div>
+            <img src="img/imagenIndex.png" alt="Index Concep-Lab">
+        </section>
+        <br><br>
+        <section class="section2Index">
+            <div class="container__slider">
+                <div class="container">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <div class="cards">
+                    <label class="card" for="item-1" id="selector-1">
+                        <img src="img/concep1.jpg">
+                    </label>
+                    <label class="card" for="item-2" id="selector-2">
+                        <img src="img/concep2.jpg">
+                    </label>
+                    <label class="card" for="item-3" id="selector-3">
+                        <img src="img/concep3.jpg">
+                    </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+    </main>
+    <footer>
+        <section class="footerSection">
+            <div class="icoimgFooter">
+                <div class="footerLogo">
+                    <img src="img/logoConcepLabNegro.jpg" alt="Logo Concep-Lab">
+                    <span>CONCEP-LAB</span>
+                </div>
+                <div class="footerIconos">
+                    <i style="cursor:pointer" class="fa-brands fa-facebook-square"></i>
+                    <i style="cursor:pointer" class="fa-brands fa-youtube-square"></i>
+                    <i style="cursor:pointer" class="fa-brands fa-twitter"></i>
+                    <i style="cursor:pointer" class="fa-brands fa-pinterest"></i>
+                    <i style="cursor:pointer" class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="navFooter">
+                <nav>
+                    <ul type="none" >
+                        <li><a class="hoverFooter" href="index.html" title="Inicio">Inicio</a></li>
+                        <li><a class="hoverFooter" href="proyectos.html">Proyecto</a></li>
+                        <li><a class="hoverFooter" href="quienesSomos.html">Quienes somos</a></li>
+                        <li><a class="hoverFooter" href="contacto.html" title="Contacto">Contacto</a></li>
+                    </ul>
+                </nav
+            </div>
+            <div>
+                <form action="form.html" class="formFooter">
+                    <input type="email" name="email"  placeholder="Suscribete..." class="inputDefault">
+                    <button type="submit" style="cursor:pointer">OK</button>
+                </form>
+                <p class="copyrightFooter">Copyright 2023. All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

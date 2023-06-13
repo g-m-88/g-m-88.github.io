@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap');
+:root {
+    --color-principal: rgba(89,89,89,255);
+    --color-texto: rgba(255,255,255,255);
+    --color-borde: rgba(255,243,1,255);
+    --color-grisclaro: rgba(190,190,190,255);
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------->> GENERALES <<-----------------------------------------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0; 
+}
+
+/*-----------------> BODY <-----------------*/
+
+body{
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: var(--color-principal);
+}
+
+/*-----------------> HEADER <-----------------*/
+
+header{
+    padding: 30px 80px;
+}
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLogo{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    
+}
+.navItems a{
+    padding-left: 15px;
+    text-decoration: none;
+    color: var(--color-texto);
+}
+.navItems{
+    padding-top: 35px;
+}
+.navToggle{
+    display: none;
+}
+.buscador{
+    display: flex;
+    padding-top: 25px;
+}
+
+
+/*-----------------> FOOTER <-----------------*/
+
+
+.footerSection{
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 247px;
+    padding:60px 80px 30px;
+}
+.footerSection>div>nav>ul>li a{
+    color:var(--color-texto);
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footerSection>div>nav>ul>li{
+    padding-bottom: 5px;
+}
+
+i{
+    color: rgb(249, 249, 249);
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.hoverFooter:hover{
+    color:var(--color-borde);
+}
+
+i:hover{
+    color:var(--color-borde);
+}
+
+.footerSection>div>form{
+    padding-bottom: 3.7rem;
+}
+
+input{
+    width:201px;
+}
+
+.footerSection>div>form>button{
+    width: 63px;
+    margin-left: 0.3rem;
+}
+
+.navFooter{
+    display: flex;
+    display:flexbox;
+}
+
+.navFooter>nav{
+    padding: 0 200px 0 80px;
+}
+
+.copyrightFooter{
+    font-size: 13px;
+    text-align: center;
+    color: var(--color-texto);
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formFooter button{
+    background-color:var(--color-borde);
+    color:rgb(249,249,249);
+    font-weight: 700;
+    border-radius: 15px;
+    border:none;
+    width: 80px;
+    height: 44px;
+    box-shadow: 2px 2px 6px var(--color-borde);
+}
+.formFooter input{
+    height: 44px;
+    width: 250px;
+    border-radius: 15px;
+    border-style: none;
+    color: rgb(143, 148, 167);
+    padding-left: 1rem;
+}
+
+.footerLogo span{
+    color: var(--color-texto);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.footerLogo{
+    padding-bottom: 25px;
+}
+.footerLogo img{
+    width: 50px;
+}
+
+.footerIconos{
+    padding-left: 20px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------->> INDEX.HTML MAIN <<-----------------------------------------*/
+
+main{
+    padding: 30px 80px;
+}
+
+.section1Index{
+    border-color: var(--color-borde);
+    border-style:solid;
+    display: flex;
+    justify-content:space-between;    
+}
+h1{
+    font-size: 60px;
+    color: var(--color-texto);
+    font-weight: 400;
+}
+.vertical{
+    background-color: rgba(255,243,1,255);
+    padding-top: 15px;
+}
+
+h2{    
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+}
+
+.tituloIA{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--color-texto);
+    font-weight: 400;
+}
+
+.textoIA{
+    font-size: 17px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.lineaBlanca{
+    border-style:solid;
+    border-color: rgba(242,242,242,255);
+    border-width: 1.9px; 
+}
+
+.cuadradoIndex{
+    border-style: solid;
+    border-color: var(--color-texto);
+    height: 160px;
+    width: 300px;
+    margin-top: 8px;
+    border-color: rgba(242,242,242,255);
+}
+
+
+
+/*CARROUSEL*/
+.container__slider{
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+label img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------->> CONTACTO.HTML MAIN <<-----------------------------------------*/
+
+.section1Contacto{
+    border-color: var(--color-borde);
+    border-style:solid;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../img/fondo.jpg");
+}
+
+
+textarea{
+    resize:none;
+    height: 150px;
+    width: 380px;
+    border-radius: 15px;
+    border-color: rgba(190,190,190,255);
+    border-color: rgba(190,190,190,255);
+    background-color: var(--color-texto);
+    padding-left: 1rem;
+    outline: none;
+}
+
+.formContacto p label{
+    color: var(--color-texto);
+}
+
+.formContacto p input{
+    padding-left: 1rem;
+}
+
+.labelNom{
+    padding-right: 11px;
+}
+
+.labelEmailAsun{
+    padding-right: 18px;
+}
+
+.formContacto{
+    padding-top: 1rem;
+}
+
+.formContacto p{
+    padding-bottom: 1rem;
+}
+
+.botonContacto{
+    background-color:var(--color-borde);
+    color:var(--color-texto);
+    font-weight: 700;
+    border-radius: 15px;
+    border:none;
+    width: 80px;
+    height: 44px;  
+}
+
+.section2Contacto{
+    padding-left:50px;
+    padding-top: 200px;
+}
+
+.section2Contacto p{
+    display: inline-block;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    color: var(--color-texto);
+}
+
+.contacto{
+    padding: 2rem 2rem;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------->> QUIENESSOMOS.HTML MAIN <<-----------------------------------------*/
+
+.divQuienesSomos{
+    padding-top: 90px;
+    padding-left: 30px;
+    
+}
+
+.imgContacto{
+    width: 50%;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------->> PROYECTOS.HTML MAIN <<-----------------------------------------*/
+.contenedor{
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap:var(--gap);
+    
+}
+
+.contenedor > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.h1Proyectos{
+    padding-left: 700px;
+}
+
+@media screen and (max-width:768px){
+    .navItems{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: var(--color-borde);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+        transform: translateX(-100%);
+        transition: 0.3 ease all;
+    }
+    .navItems a{
+        text-align: center;
+    }
+    .navToggle{
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .navToggle span{
+        width: 30px;
+        height: 4px;
+        background: var(--color-texto);
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+    .close span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .close span:nth-child(2){
+        display: none;
+    }
+    .close span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+    .open{
+        transform: translate(0) !important;
+    }
+    .buscador{
+        display: none;
+    }
+    .section1Index img{
+        display: none;
+    }
+    header{
+        padding: 1rem;
+    }
+    main{
+        padding: 1rem;
+    }
+    .navFooter{
+        display: none;
+    }
+    .footerSection{
+        flex-direction: column;
+        align-items: center;
+    }
+    label img{
+        height: 70%;
+    }
+    .section1Index{
+        padding-right: 1rem;
+        
+    }
+    .divArq{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .navLogo span{
+        font-size: 30px;
+    }
+    .divQuienesSomos{
+        padding: 2rem;
+        
+    }
+    .h2Contacto{ 
+        display: none;
+    }
+    .section2Contacto{
+        padding:1.5rem 4.5rem;
+    }
+    .contenedor{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+    .h1Proyectos{
+        padding-left: 200px;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2ce30f9d9c.js" crossorigin="anonymous"></script>
+    <title>CONCEP-LAB</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navLogo">
+                <img src="img/logoConcepLab.png" alt="Logo Concep-Lab">
+                <span>CONCEP-LAB</span>
+            </div>
+            <div class="navItems" id="_items">
+                <a class="hoverFooter" href="index.html">INICIO</a>
+                <a class="hoverFooter" href="proyectos.html">PROYECTOS</a>
+                <a class="hoverFooter" href="quienesSomos.html">QUIENES SOMOS</a>
+                <a class="hoverFooter" href="contacto.html">CONTACTO</a>
+                <a class="hoverFooter" href="dondeestamos.html">DONDE ESTAMOS</a>
+            </div>
+            <div class="navToggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="buscador">
+                <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i>
+                <form action="form.html">
+                    <input type="search" name="search" class="inputDefault">
+                </form>
+            </div>
+        </nav>
+        <script>
+            _toggle.onclick = () =>{
+                _items.classList.toggle("open")
+                _toggle.classList.toggle("close")
+            }
+        </script>
+    </header>
+    <main> 
+        <section class="section1Index">
+            <div class="vertical">
+                <h2>LABORATORIO-CONCEPTUAL</h2>
+            </div>
+            <div class="divQuienesSomos">
+                <h1>DONDE ESTAMOS</h1> 
+                <div class="lineaBlanca"></div>
+                <p class="textoIA">
+                 
+                    <div style="display: flex; justify-content: center;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13131.90868622305!2d-58.485848440662664!3d-34.63001717659189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3556460910b423%3A0xc1722a2754ce548e!2sconcept!5e0!3m2!1ses-419!2sar!4v1686668506462!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                       
+                      Emilio Lamarca 324, C1407DFF C1407DFF, Buenos Aires
+                 
+                <div class="lineaBlanca"></div>
+            </div>
+            <img src="img/fondoContacto.jpg" alt="fondoContacto" class="imgContacto">
+        </section>
+    </main>
+    <footer>
+        <section class="footerSection">
+            <div class="icoimgFooter">
+                <div class="footerLogo">
+                    <img src="img/logoConcepLabNegro.jpg" alt="Logo Concep-Lab">
+                    <span>CONCEP-LAB</span>
+                </div>
+                <div class="footerIconos">
+                    <i style="cursor:pointer" class="fa-brands fa-facebook-square"></i>
+                    <i style="cursor:pointer" class="fa-brands fa-youtube-square"></i>
+                    <i style="cursor:pointer" class="fa-brands fa-twitter"></i>
+                    <i style="cursor:pointer" class="fa-brands fa-pinterest"></i>
+                    <i style="cursor:pointer" class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="navFooter">
+                <nav>
+                    <ul type="none" >
+                        <li><a class="hoverFooter" href="index.html" title="Inicio">Inicio</a></li>
+                        <li><a class="hoverFooter" href="proyectos.html">Proyecto</a></li>
+                        <li><a class="hoverFooter" href="quienesSomos.html">Quienes somos</a></li>
+                        <li><a class="hoverFooter" href="contacto.html" title="Contacto">Contacto</a></li>
+                    </ul>
+                </nav
+            </div>
+            <div>
+                <form action="form.html" class="formFooter">
+                    <input type="email" name="email"  placeholder="Suscribete..." class="inputDefault">
+                    <button type="submit" style="cursor:pointer">OK</button>
+                </form>
+                <p class="copyrightFooter">Copyright 2023. All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
